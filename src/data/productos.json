@@ -1,0 +1,100 @@
+
+    {
+        "productos" :[
+    {
+        "prod": "cargador",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3487&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "cargador legatus tipo C"
+    },
+    {
+        "prod": "cargador",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3306&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Cargador tipo C USB 3.8 IB3803"
+    },
+    {
+        "prod": "USB",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3452&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Cargador Iphone Legatus"
+    },
+    {
+        "prod": "CABLE",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3458&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Cable RCA a RCA"
+    },
+    {
+        "prod": "AURICULARES",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3446&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Auriculares Inalambricos A6S"
+    },
+    {
+        "prod": "PARLANTES",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3448&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Parlante Royal RS-3106"
+    },
+    {
+        "prod": "SMARTWATCH",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3414&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Reloj Smart Xiaomi 7"
+    },
+    {
+        "prod": "SMARTWATCH",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3412&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Reloj Pro21 Cuadrado"
+    },
+    {
+        "prod": "SMARTWATCH",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3410&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Reloj Smartwatch - colores pro21"
+    },
+    {
+        "prod": "OTROS",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3400&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Balanza Gramera Suono"
+    },
+    {
+        "prod": "OTROS",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3250&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Control de aire "
+    },
+    {
+        "prod": "OTROS",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3214&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Control Smart TV"
+    },
+    {
+        "prod": "OTROS",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3130&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Soporte para auto X01186"
+    },
+    {
+        "prod": "ILUMINACION",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3384&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Foco giratorio led de colores"
+    },
+
+    {
+        "prod": "ILUMINACION",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3064&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Tira led neon 5 metros"
+    },
+
+    {
+        "prod": "PERIFERICOS",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3342&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Combo Teclado + Mouse"
+    },
+
+    {
+        "prod": "VARIOS",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=2880&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Joystick"
+    },
+
+    {
+        "prod": "MEMORIAS",
+        "link": "https://ss-static-01.esmsv.com/id/166795/productos/obtenerimagen/?id=3240&useDensity=true&width=1920&height=931&tipoEscala=contain",
+        "detalle": "Pendrive Kingston 64 gb"
+    }
+
+]
+    }
