@@ -1,4 +1,5 @@
 ---
+import HeaderButton from "./HeaderButton.astro";
 
 ---
 
@@ -17,10 +18,10 @@
 		</a>
 
 		<ul class="hidden absolute top-1/2 left-1/2 lg:right-40 xl:right-2/3 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:items-center lg:flex-1 lg:space-x-6 ">
-			<li><a class="text-xl text-gray-400 hover:text-gray-500" href="#">INICIO</a></li>
-			<li><a class="text-xl text-gray-600 font-bold" href="#">PRODUCTOS</a></li>
-			<li><a class="text-xl text-gray-400 hover:text-gray-500" href="#">NOSOTROS</a></li>
-			<li><a class="text-xl text-gray-400 hover:text-gray-500" href="#">CONTACTOS</a></li>
+			<li><HeaderButton texto="inicio" url="/"/></li>
+			<li><HeaderButton texto="productos" url="/productos"/></li>
+			<li><HeaderButton texto="nosotros" url="/about"/></li>
+			<li><HeaderButton texto="contacto" url="/contacto"/></li>
 		</ul>
 	</nav>
 	<div class="navbar-menu relative z-50 hidden">
