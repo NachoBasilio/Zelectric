@@ -1,6 +1,8 @@
 ---
 import HeaderButton from "./HeaderButton.astro";
 
+export const prerender = true
+
 ---
 
 
@@ -17,7 +19,7 @@ import HeaderButton from "./HeaderButton.astro";
             Zelectric
 		</a>
 
-		<ul class="hidden absolute top-1/2 left-1/2 lg:right-40 xl:right-2/3 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:items-center lg:flex-1 lg:space-x-6 ">
+		<ul class="hidden absolute top-1/2 left-1/2 lg:right-40 xl:right-full xl:left-2/3 lg:pr-60 xl:pr-80 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:items-center lg:flex-1 lg:space-x-6 ">
 			<li><HeaderButton texto="inicio" url="/"/></li>
 			<li><HeaderButton texto="productos" url="/productos"/></li>
 			<li><HeaderButton texto="nosotros" url="/about"/></li>
@@ -40,16 +42,16 @@ import HeaderButton from "./HeaderButton.astro";
 			<div>
 				<ul>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">INICIO</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/">INICIO</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">PRODUCTOS</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/productos">PRODUCTOS</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">NOSOTROS</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/about">NOSOTROS</a>
 					</li>
                     <li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">CONTACTOS</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/contacto">CONTACTOS</a>
 					</li>
 				</ul>
 			</div>
@@ -61,52 +63,44 @@ import HeaderButton from "./HeaderButton.astro";
 			</div>
 		</nav>
 	</div>
-
+	
 <script>
-// Burger menus
-document.addEventListener('DOMContentLoaded', function() {
-    // open
-    const burger = document.querySelectorAll('.navbar-burger');
-    const menu = document.querySelectorAll('.navbar-menu');
-
-    if (burger.length && menu.length) {
-        for (let i = 0; i < burger.length; i++) {
-            burger[i]?.addEventListener('click', function() {
-                for (let j = 0; j < menu.length; j++) {
-                    menu[j]?.classList.toggle('hidden');
-                }
-            });
-        }
-    }
-
-    // close
-    const close = document.querySelectorAll('.navbar-close');
-    const backdrop = document.querySelectorAll('.navbar-backdrop');
-
-    if (close.length) {
-        for (let i = 0; i < close.length; i++) {
-            close[i]?.addEventListener('click', function() {
-                for (let j = 0; j < menu.length; j++) {
-                    menu[j]?.classList.toggle('hidden');
-                }
-            });
-        }
-    }
-
-    if (backdrop.length) {
-        for (let i = 0; i < backdrop.length; i++) {
-            backdrop[i]?.addEventListener('click', function() {
-                for (let j = 0; j < menu.length; j++) {
-                    menu[j]?.classList.toggle('hidden');
-                }
-            });
-        }
-    }
-});
-</script>
-
-<style>
-    a{
-        font-family: 'Montserrat', sans-serif;
-    }
-</style>
+	// Burger menus
+		// open
+		const burger = document.querySelectorAll('.navbar-burger');
+		const menu = document.querySelectorAll('.navbar-menu');
+	
+		if (burger.length && menu.length) {
+			for (let i = 0; i < burger.length; i++) {
+				burger[i]?.addEventListener('click', function() {
+					for (let j = 0; j < menu.length; j++) {
+						menu[j]?.classList.toggle('hidden');
+					}
+				});
+			}
+		}
+	
+		// close
+		const close = document.querySelectorAll('.navbar-close');
+		const backdrop = document.querySelectorAll('.navbar-backdrop');
+	
+		if (close.length) {
+			for (let i = 0; i < close.length; i++) {
+				close[i]?.addEventListener('click', function() {
+					for (let j = 0; j < menu.length; j++) {
+						menu[j]?.classList.toggle('hidden');
+					}
+				});
+			}
+		}
+	
+		if (backdrop.length) {
+			for (let i = 0; i < backdrop.length; i++) {
+				backdrop[i]?.addEventListener('click', function() {
+					for (let j = 0; j < menu.length; j++) {
+						menu[j]?.classList.toggle('hidden');
+					}
+				});
+			}
+		}
+	</script>
