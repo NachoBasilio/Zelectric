@@ -24,10 +24,13 @@ const { title } = Astro.props;
 		<ViewTransitions />
 		<title>{title}</title>
 	</head>
-	<body class=" ">
+	<body class="w-full">
 		<Header />
 		<slot />
-		<Footer/>
+		<div class="">
+			<Footer/>
+
+		</div>
 	</body>
 </html>
 <style>
