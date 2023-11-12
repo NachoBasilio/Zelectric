@@ -1,7 +1,7 @@
 ---
 ---
 
-<footer class="w-full bg-gray-300 p-5 lg:p-5 flex flex-col lg:flex-row items-center justify-between">
+<footer id="footer" class=" fixed bottom-0 w-full hide-on-scroll bg-gray-300 p-5 lg:p-5 flex flex-col lg:flex-row items-center justify-between">
     <ul class="flex gap-5 lg:gap-12">
         <li class="w-8 lg:w-12">
             <a href="https://www.instagram.com/zelectric_" target="_blank">
@@ -19,7 +19,7 @@
             </a>
         </li>
     </ul>
-    <div class="flex flex-col items-center lg:items-center text-center lg:text-left gap-2 lg:gap-5">
+    <div class="flex flex-col items-center lg:items-center text-center lg:text-left gap-2 lg:gap-1">
         <p>Dirección</p>
         <p>Horario de atención</p>
         <p>Teléfono</p>
@@ -28,3 +28,30 @@
         Zelectric
     </h3>
 </footer>
+
+<script>
+let lastScrollTop = 0;
+const functionScroll = () =>{
+    let st = window.pageYOffset || document.documentElement.scrollTop;
+    let footer = document.querySelector('.hide-on-scroll');
+
+    if (st > lastScrollTop) {
+        // Scrolling down
+        footer?.classList.add('hidden');
+    } else {
+        // Scrolling up
+        footer?.classList.remove('hidden');
+    }
+
+    lastScrollTop = st <= 0 ? 0 : st; // For mobile or negative scrolling
+}
+
+const functionQueDaElEvento = ()=>{
+    window.addEventListener("scroll", functionScroll);
+}
+
+functionQueDaElEvento()
+document.addEventListener('astro:after-swap', functionQueDaElEvento);
+
+
+</script>
