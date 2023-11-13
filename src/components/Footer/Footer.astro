@@ -42,7 +42,7 @@
 <script>
     let lastScrollTop = 0;
     const functionScroll = () => {
-        let st = window.pageYOffset || document.documentElement.scrollTop;
+        let st = window.scrollY || document.documentElement.scrollTop;
         
         let footer = document.querySelector('.hide-on-scroll');
 
