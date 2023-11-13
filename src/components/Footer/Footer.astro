@@ -28,6 +28,7 @@
         Zelectric
     </h3>
 </footer>
+
 <style>
     .hide-on-scroll {
       transition: opacity 0.5s ease; /* Transición de opacidad */
@@ -42,6 +43,7 @@
     let lastScrollTop = 0;
     const functionScroll = () => {
         let st = window.pageYOffset || document.documentElement.scrollTop;
+        
         let footer = document.querySelector('.hide-on-scroll');
 
         if (st > lastScrollTop) {
@@ -51,8 +53,7 @@
             // Scrolling up
             footer?.classList.remove('opacity-0');
         }
-
-        lastScrollTop = st <= 0 ? 0 : st; // For mobile or negative scrolling
+        lastScrollTop = st <= 0 ? 0 : st; // Para mobile, para que lastScrollTop no sea negativo. 
     }
 
     const functionQueDaElEvento = () => {
