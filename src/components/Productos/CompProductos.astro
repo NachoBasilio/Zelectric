@@ -7,6 +7,6 @@ console.log(ProductosJSON.productos)
 
 <div class="mt-10 flex flex-col xl:flex-row flex-wrap gap-4 justify-center items-center	">
     {ProductosJSON.productos.map(producto =>(
-        <Producto nombre={producto.prod} img={producto.link} desc={producto.prod}></Producto>
+        <Producto nombre={producto.prod} img={producto.link} desc={producto.detalle}></Producto>
     ))}
 </div>
