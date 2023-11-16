@@ -6,8 +6,14 @@ import CompProductos from "../components/Productos/CompProductos.astro";
 ---
 
 <Layout title="Productos">
-    <div class="container py-10 m-auto flex flex-col ">
+    <div class="container py-10 m-auto flex flex-col producto">
         <Input></Input>
         <CompProductos></CompProductos>
     </div>
 </Layout>
+
+<style>
+    .producto{
+        overflow-y: auto;
+    }
+</style>
