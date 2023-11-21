@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CompProductos from "../components/Productos/CompProductos.astro";
-
+import ProductoComponente from "../components/Productos/ProductoComponente";
 ---
 
 <Layout title="Productos">
     <div class="container py-10 m-auto flex flex-col producto">
-        <CompProductos></CompProductos>
+        <ProductoComponente
+        client:load
+        />
     </div>
 </Layout>
 
