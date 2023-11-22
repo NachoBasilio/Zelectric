@@ -4,20 +4,21 @@ import Producto from "./Producto.jsx"
 
 
 export default function ProductoComponente() {
-    const [productos, setProductos] = useState(ProductosJSON);
+    const [productos, setProductos] = useState(ProductosJSON.productos);
 
     const handlerClick = (e) => {
-        e.preventDefault()
-        console.log(e)
-    }
+        e.preventDefault();
+        const valor = e.target[0].value.toLowerCase();
+        const arrayFiltrado = productos.filter((prod) =>
+          prod.prod.toLowerCase().includes(valor)
+        );
+        setProductos(arrayFiltrado)
+    };
 
   return (
     <div class="mt-10 flex flex-col xl:flex-row flex-wrap gap-4 justify-center items-center"	>
     <form 
-    onSubmit={(e) => {
-        e.preventDefault()
-        console.log(e)
-    }}
+    onSubmit={handlerClick}
     id="input" 
     className="flex w-full justify-center gap-2 m-10">
     <div className="w-12">
@@ -34,7 +35,7 @@ export default function ProductoComponente() {
 
     </form>
     { 
-        productos.productos.map(producto =>(
+        productos.map(producto =>(
             <Producto nombre={producto.prod} img={producto.link} desc={producto.detalle}></Producto>
         ))
     }
