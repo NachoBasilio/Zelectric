@@ -6,14 +6,27 @@ import Box from "../components/Home/Box.astro"
 
 <Layout title="Home">
     <Carrousel/>
-    <div class="relative lg:w-3/4 py-10 m-auto flex flex-col xl:flex-row gap-6">
+    <div class="relative lg:w-3/4 py-5 m-auto flex flex-col xl:flex-row gap-6">
         <div class="flex flex-col lg:flex-row gap-16 m-auto xl:m-0">
             <Box></Box>
             <Box></Box>
         </div>
-        <div class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt enim culpa alias iure ea expedita nemo mollitia harum odio hic! In et quaerat explicabo ab tempore dolores eius vitae, inventore, commodi fuga quasi ad, laudantium sed repellat sint. Placeat, velit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt enim culpa alias iure ea expedita nemo mollitia harum odio hic! In et quaerat explicabo ab tempore dolores eius vitae, inventore, commodi fuga quasi ad, laudantium sed repellat sint. Placeat, velit.
+        <div class="flex flex-col gap-4 text-left text-xl m-2">
+            <p>
+                Explora la calidad y estilo en nuestros accesorios electrónicos. Desde fundas elegantes hasta cables USB confiables, ofrecemos lo esencial para tu vida conectada.
+            </p>
+            <p>
+                Potencia tus dispositivos con cargadores eficientes y disfruta del sonido de nuestros parlantes. Haz que cada conexión sea extraordinaria. 
+            </p>
+            <p>
+                Bienvenido a una experiencia de compra única en accesorios electrónicos.
+            </p>
         </div>
     </div>
+    <style>
+        .text-xl{
+            font-size: 1.1rem/* 20px */;
+            line-height: 1.75rem/* 28px */;
+        }   
+    </style>
 </Layout>
