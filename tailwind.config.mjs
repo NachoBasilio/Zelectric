@@ -36,7 +36,7 @@ export default {
 				950: '#000000'
 			},
 			'zelectric-ribbon': {
-				DEFAULT: '#4040FB',
+				DEFAULT: 'rgba(64, 64, 251, 0.8)',
 				50: '#F4F4FF',
 				100: '#E0E0FE',
 				200: '#B8B8FE',
