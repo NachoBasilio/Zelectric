@@ -16,7 +16,7 @@ export default function ProductoComponente() {
     };
 
   return (
-    <div class="mt-10 flex flex-col xl:flex-row flex-wrap gap-4 justify-center items-center"	>
+    <div class="mt-2 flex flex-col xl:flex-row flex-wrap gap-4 justify-center items-center"	>
     <form 
     onSubmit={handlerClick}
     id="input" 
@@ -25,7 +25,7 @@ export default function ProductoComponente() {
         <img src="https://cdn-icons-png.flaticon.com/512/0/159.png" alt=""/>
     </div>
     <input
-        className=" text-sm rounded-lg focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-yellow-200" 
+        className=" text-sm rounded-lg ring-yellow-zelectric border-yellow-zelectric focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-yellow-200" 
         placeholder="Buscar..." 
         type="text"
     />
