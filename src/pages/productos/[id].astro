@@ -12,13 +12,17 @@ if(id){
 }
 console.log(producto)
 
+
+
 export const getStaticPaths = (() => {
-    
-    return [{params: {id: "1"}}];
+    const todasLasIds = ProductosJSON.productos.map(prod => ({
+    params: {id: prod.id}
+    })) 
+    return todasLasIds;
 }) satisfies GetStaticPaths;
 ---
 
 
-<Layout>
+<Layout title={producto.prod}>
     <h1>{producto.prod}</h1>
 </Layout>
