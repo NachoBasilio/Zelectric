@@ -24,7 +24,7 @@ export default function ProductoComponente() {
     <div className="mt-2 flex flex-col xl:flex-row flex-wrap gap-4 justify-center items-center">
       <form
         id="input"
-        className="flex w-full justify-center gap-2 m-10"
+        className="flex dark:text-white   w-4/5 lg:w-full justify-center gap-2 m-10"
         onSubmit={(e) => e.preventDefault()}
       >
         <div className="w-12">
