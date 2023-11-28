@@ -91,6 +91,9 @@ export default {
 				900: '#3C3201',
 				950: '#201B00'
 			},
+			'yellow-zelectric':{
+				DEFAULT: '#FF9800'
+			}
 		}
 	},
 	plugins: [

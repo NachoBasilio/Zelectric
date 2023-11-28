@@ -38,10 +38,12 @@ const { title } = Astro.props;
 
 	body {
     overflow: scroll;
+	overflow-x: hidden;
 	}
+
 	.hide-on-scroll {
             transition: transform 0.5s ease;
-        }
+    }
 
     .hide-on-scroll.hidden {
         transform: translateY(100%);

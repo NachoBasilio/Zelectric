@@ -1,54 +1,19 @@
-# Astro Starter Kit: Basics
+# E-Commerce de Artículos de Computación
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Bienvenido/a al repositorio del proyecto de E-Commerce de una empresa especializada en la venta de artículos de computación! Este proyecto tiene como objetivo proporcionar una plataforma de comercio electrónico robusta y fácil de usar para la compra y venta de productos relacionados con la tecnología.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Descripción del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El E-Commerce de Artículos de Computación es una aplicación web diseñada para ofrecer una experiencia de compra eficiente y segura a los clientes interesados en adquirir productos de computación, desde hardware hasta accesorios y periféricos.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Características Principales
 
-## 🚀 Project Structure
+- **Catálogo Amplio:** Explore una amplia variedad de productos de computación, desde laptops y componentes de hardware hasta periféricos y software.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Tecnologías Utilizadas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Frontend:** AstroJS / ReactJS
+- **Backend:** Aun no
+- **Base de Datos:** Aun no
+- **Autenticación y Autorización:** Aun no
+- **Pago en Línea:** Aun no
