@@ -47,6 +47,7 @@ export default function ProductoComponente() {
       {productosFiltrados.map((producto) => (
         <Producto
           key={producto.id}
+          id = {producto.id}
           nombre={producto.prod}
           img={producto.link}
           desc={producto.detalle}

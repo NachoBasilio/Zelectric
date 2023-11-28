@@ -1,0 +1,24 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro"
+const { id } = Astro.params
+console.log(id)
+
+import ProductosJSON from "../../data/productos.json";
+
+let producto;
+if(id){
+    producto = ProductosJSON.productos.find(prod => prod.id == id)
+}
+console.log(producto)
+
+export const getStaticPaths = (() => {
+    
+    return [{params: {id: "1"}}];
+}) satisfies GetStaticPaths;
+---
+
+
+<Layout>
+    <h1>{producto.prod}</h1>
+</Layout>
