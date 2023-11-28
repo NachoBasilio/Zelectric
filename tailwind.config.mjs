@@ -94,6 +94,9 @@ export default {
 			},
 			'yellow-zelectric':{
 				DEFAULT: '#FF9800'
+			},
+			'dark-zelectic':{
+				DEFAULT: '#1A1A1A'
 			}
 		}
 	},
