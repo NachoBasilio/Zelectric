@@ -2,5 +2,37 @@
 import Layout  from "../layouts/Layout.astro";
 ---
 
-<Layout title="Home">
+<Layout title="Contacto">
+    <div class="w-full flex flex-col justify-center ">
+        <div class="container mt-16 lg:mb-24 sm:mb-14 mb-6 mx-auto">
+            <h1 class="lg:text-3xl text-xl font-semibold">Dejanos tu consulta, desde Zelectric te responderemos pronto</h1>
+        </div>
+
+        <div class="container grid grid-cols-2 gap-10 mx-auto p-2">
+            <div class="flex flex-col">
+                <p class="mb-8 lg:text-lg text-sm">
+                    Respuestas rápidas a tus consultas sobre todo lo que necesites, garantizando soluciones eficientes y satisfacción inmediata con nuestro servicio especializado
+                </p>
+                <div>
+                    <form action="" method="post" class="flex flex-col">
+                        <p class="mb-3">Formulario:</p>
+                        <input type="text" placeholder="Nombre" class="mb-4 w-3/4 border border-zelectric-dark-blue-100 border-b-4">
+                        <input type="text" placeholder="Mail" class="mb-4 w-3/4 border border-zelectric-dark-blue-100 border-b-4">
+                        <input type="text" placeholder="Telefono" class="w-3/4 border border-zelectric-dark-blue-100 border-b-4">
+                    </form>
+                </div>
+                
+            </div>
+            <div class="flex justify-center flex-col">
+                <textarea placeholder="Escribe tu mensaje aqui..." class="flex flex-col justify-center w-full h-56 mb-12  border-zelectric-dark-blue-200 rounded-md border-2" name="" id=""></textarea>
+                <div class="flex justify-center">
+                    <button class="bg-yellow-zelectric lg:w-60 sm:w-36 w-24 lg:text-xl sm:text-lg text-sm dark:text-gray-900 h-10 rounded font-semibold">
+                        CONTACTAR
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </Layout>
