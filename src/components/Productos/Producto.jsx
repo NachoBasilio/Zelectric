@@ -12,7 +12,7 @@ export default function Producto({nombre, img, desc, id}) {
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{desc}</p>
         </div>
 
-        <a className="text-blue-800 mb-2" href={"/productos/"+id}>Leer mas</a>
+        <a className="text-blue-800 mb-2 dark:text-blue-200" href={"/productos/"+id}>Leer mas</a>
     </div>
   )
 } 

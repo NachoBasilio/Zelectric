@@ -4,11 +4,17 @@ import Layout from "../../layouts/Layout.astro"
 const { id } = Astro.params
 console.log(id)
 
+interface Producto {
+    id: string;
+    prod: string;
+    link: string;
+    detalles: string[];
+}
 
 import ProductosJSON from "../../data/productos.json";
 
 
-const producto = ProductosJSON.productos.find(prod => prod?.id == id) || {prod: "Hola"}
+const producto: Producto|null = ProductosJSON.productos.find(prod => prod?.id == id) || null
 
 
 
@@ -23,6 +29,10 @@ export const getStaticPaths = (() => {
 ---
 
 
-<Layout title={producto.prod}>
-    <h1>{producto.prod}</h1>
+<Layout title={producto?.prod || "Producto"}>
+    <h1>{producto?.prod}</h1>
+    <img src={producto?.link} alt="">
+    {producto?.detalles.map(detalle =>(
+        <p>{detalle}</p>
+    ))}
 </Layout>
