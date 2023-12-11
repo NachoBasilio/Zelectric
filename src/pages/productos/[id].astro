@@ -30,9 +30,16 @@ export const getStaticPaths = (() => {
 
 
 <Layout title={producto?.prod || "Producto"}>
-    <h1>{producto?.prod}</h1>
-    <img src={producto?.link} alt="">
-    {producto?.detalles.map(detalle =>(
-        <p>{detalle}</p>
-    ))}
+    <div class="flex flex-col items-center gap-4">
+        <h1 class="dark:text-zelectric-ribbon-100 text-2xl md:text-4xl text-zelectric-ribbon-600">{producto?.prod}</h1>
+        <div class="w-64 h-64 md:w-1/2 md:h-1/2 overflow-hidden flex items-center justify-center">
+            <img class="object-cover w-full h-full" src={producto?.link} alt="">
+        </div>
+        <ul class="list-disc">
+            {producto?.detalles.map(detalle => (
+                <li class="dark:text-zelectric-ribbon-100 text-zelectric-ribbon-600">{detalle}</li>
+            ))}
+        </ul>
+    </div>
+    
 </Layout>
