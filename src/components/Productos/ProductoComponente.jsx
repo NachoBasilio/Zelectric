@@ -21,7 +21,7 @@ export default function ProductoComponente() {
   };
 
   return (
-    <div className="mt-2 flex flex-col xl:flex-row flex-wrap gap-4 justify-center items-center">
+    <div className="mt-2 flex flex-col xl:flex-row flex-wrap gap-4 justify-center items-center mb-20">
       <form
         id="input"
         className="flex dark:text-white   w-4/5 lg:w-full justify-center gap-2 m-10"
