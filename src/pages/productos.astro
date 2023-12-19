@@ -1,11 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ProductoComponente from "../components/Productos/ProductoComponente";
-import HeaderSeccion from "../components/Header/HeaderSeccion.astro"
+import Header from "../components/Header/Header.astro";
 
 ---
 <Layout title="Productos">
-    <HeaderSeccion title="Productos"></HeaderSeccion>
+    <Header title="Productos"></Header>
     <div class="container py-10 m-auto flex flex-col producto">
         <ProductoComponente
         client:load

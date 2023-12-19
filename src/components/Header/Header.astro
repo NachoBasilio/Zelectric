@@ -1,21 +1,28 @@
 ---
 import HeaderButton from "./HeaderButton.astro";
+import HeaderSeccion from "./HeaderSeccion.astro"
 
 export const prerender = true
 
----
+interface Props {
+	title: string;
+}
 
+const { title } = Astro.props;
+
+---
+<HeaderSeccion title={title}></HeaderSeccion>
 
 	<nav class="relative container m-auto px-4 py-4 mt-6 flex justify-between items-center bg-white dark:bg-dark-zelectic">
-        <div class="lg:hidden navbar-burger">
+		<div class=`lg:hidden ${title !== "home" ? "hidden" : "lg:hidden"} navbar-burger`>
 				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 					
 					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
 				</svg>
 			</button>
 		</div>
-		<a class="xl:text-5xl text-2xl  leading-none dark:text-white  text-zelectric-ribbon/80 my-auto" href="/">
-            Zelectric
+		<a class=`xl:text-5xl text-2xl ${title !== "home" ? "hidden" : ""} lg:block leading-none dark:text-white  text-zelectric-ribbon/80 my-auto` href="/">
+			Zelectric
 		</a>
 
 		<ul class="hidden absolute top-1/2 left-1/2 lg:right-40 xl:right-full xl:left-2/3 lg:pr-60 xl:pr-80 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:items-center lg:flex-1 lg:space-x-6">
@@ -24,6 +31,7 @@ export const prerender = true
 			<li><HeaderButton texto="contacto" url="/contacto"/></li>
 		</ul>
 	</nav>
+
 	<div class="navbar-menu relative z-50 hidden">
 		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
 		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-xs py-6 px-6 dark:bg-dark-zelectic bg-white border-r overflow-y-auto">
@@ -58,6 +66,12 @@ export const prerender = true
 			</div>
 		</nav>
 	</div>
+	
+
+	
+	
+
+
 	
 	<script>
 		const MenuOpenClose = () => {
