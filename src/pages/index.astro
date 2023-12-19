@@ -2,9 +2,13 @@
 import Layout  from "../layouts/Layout.astro";
 import Carrousel from "../components/Home/Carrousel.astro"
 import Box from "../components/Home/Box.astro"
+import Header from "../components/Header/Header.astro"
+
 ---
 
 <Layout title="Home">
+    <Header />
+
     <Carrousel/>
     <div class="relative lg:w-3/4 py-5 m-auto flex flex-col xl:flex-row gap-6">
         <div class="flex flex-col lg:flex-row gap-16 m-auto xl:m-0">
