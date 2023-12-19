@@ -14,7 +14,7 @@ const { title } = Astro.props;
 <HeaderSeccion title={title}></HeaderSeccion>
 
 	<nav class="relative container m-auto px-4 py-4 mt-6 flex justify-between items-center bg-white dark:bg-dark-zelectic">
-		<div class=`lg:hidden ${title !== "home" ? "hidden" : "lg:hidden"} navbar-burger`>
+		<div class=`lg:hidden ${title !== "home" ? "hidden" : "xl:hidden"} navbar-burger`>
 				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 					
 					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -25,7 +25,7 @@ const { title } = Astro.props;
 			Zelectric
 		</a>
 
-		<ul class="hidden absolute top-1/2 left-1/2 lg:right-40 xl:right-full xl:left-2/3 lg:pr-60 xl:pr-80 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:items-center lg:flex-1 lg:space-x-6">
+		<ul class="hidden absolute top-1/2 left-1/2  lg:right-full lg:left-2/3 lg:pr-60 xl:pr-80 transform -translate-y-1/2 -translate-x-1/2 lg:flex items-center lg:flex-1 lg:space-x-6">
 			<li><HeaderButton texto="productos" url="/productos"/></li>
 			<li><HeaderButton texto="nosotros" url="/about"/></li>
 			<li><HeaderButton texto="contacto" url="/contacto"/></li>
