@@ -1,6 +1,6 @@
 # E-Commerce de Artículos de Computación
 
-¡Bienvenido/a al repositorio del proyecto de E-Commerce de una empresa especializada en la venta de artículos de computación! Este proyecto tiene como objetivo proporcionar una plataforma de comercio electrónico robusta y fácil de usar para la compra y venta de productos relacionados con la tecnología.
+¡Bienvenido/a al repositorio del proyecto de E-Commerce de una empresa especializada en la venta de artículos de computación! Este proyecto tiene como objetivo proporcionar una plataforma de comercio electrónico robusta y fácil de usar para la compra y venta de productos relacionados con la tecnología. 
 
 ## Descripción del Proyecto
 
