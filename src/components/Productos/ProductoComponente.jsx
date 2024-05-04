@@ -4,7 +4,7 @@ import ProductosJSON from "../../data/productos.json";
 import Producto from "./Producto.jsx";
 
 export default function ProductoComponente() {
-  const [productos, setProductos] = useState(ProductosJSON.productos);
+  const productos = ProductosJSON.productos;
   const [productosFiltrados, setProductosFiltrados] = useState(productos);
 
   const handlerClick = (e) => {
